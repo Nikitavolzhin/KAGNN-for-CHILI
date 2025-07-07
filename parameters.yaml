@@ -1,0 +1,176 @@
+KAGCN:
+  edge_attr_regression:
+    learning_rate: 0.002291695190745947
+    num_layers: 3
+    batch_size: 32
+    hidden_channels: 24
+    max_epochs: 500
+    max_patience: 20
+    dropout_rate: 0.024711986477894646
+    grid_size: 4
+    spline_order: 3
+
+  crystal_system_classification:
+    learning_rate: 0.006896673572169274
+    num_layers: 2
+    batch_size: 32
+    hidden_channels: 39
+    max_epochs: 500
+    max_patience: 20
+    dropout_rate: 0.21408373514940404
+    grid_size: 4
+    spline_order: 4
+
+  space_group_classification:
+    learning_rate: 0.00449218463641538
+    num_layers: 3
+    batch_size: 32
+    hidden_channels: 59
+    max_epochs: 500
+    max_patience: 20
+    dropout_rate: 0.07108031676956428
+    grid_size: 3
+    spline_order: 5
+
+  saxs_regression:
+    learning_rate: 0.009277928622352827
+    num_layers: 1
+    batch_size: 32
+    hidden_channels: 50
+    max_epochs: 500
+    max_patience: 20
+    dropout_rate: 0.3520935462043392
+    grid_size: 3
+    spline_order: 4
+
+  xrd_regression:
+    learning_rate: 0.0005475142385196597
+    num_layers: 1
+    batch_size: 32
+    hidden_channels: 48
+    max_epochs: 500
+    max_patience: 20
+    dropout_rate: 0.45096958614032423
+    grid_size: 5
+    spline_order: 3
+
+  xPDF_regression:
+    learning_rate: 0.0015438831271197698
+    num_layers: 1
+    batch_size: 32
+    hidden_channels: 33
+    max_epochs: 500
+    max_patience: 20
+    dropout_rate: 0.3181508850708523
+    grid_size: 4
+    spline_order: 4
+
+  pos_abs_regression:
+    learning_rate: 0.0006979840546100576
+    num_layers: 2
+    batch_size: 32
+    hidden_channels: 37
+    max_epochs: 500
+    max_patience: 20
+    dropout_rate: 0.46676958430505766
+    grid_size: 5
+    spline_order: 4
+
+  atom_classification:
+    learning_rate: 0.00012856287486906045
+    num_layers: 3
+    batch_size: 32
+    hidden_channels: 55
+    max_epochs: 500
+    max_patience: 20
+    dropout_rate: 0.1423664687609987
+    grid_size: 5
+    spline_order: 3
+KAGIN:
+  edge_attr_regression:
+    learning_rate: 0.005545332033876256
+    num_layers: 3
+    batch_size: 32
+    hidden_channels: 36
+    max_epochs: 500
+    max_patience: 20
+    dropout_rate: 0.06175952359748984
+    grid_size: 3
+    spline_order: 3
+
+  crystal_system_classification:
+    learning_rate: 0.0011464796947718806
+    num_layers: 1
+    batch_size: 32
+    hidden_channels: 64
+    max_epochs: 500
+    max_patience: 20
+    dropout_rate: 0.3011994227927284
+    grid_size: 5
+    spline_order: 4
+
+  space_group_classification:
+    learning_rate: 0.0011885146365841856
+    num_layers: 2
+    batch_size: 32
+    hidden_channels: 64
+    max_epochs: 500
+    max_patience: 20
+    dropout_rate: 0.2178545239712077
+    grid_size: 5
+    spline_order: 3
+
+  saxs_regression:
+    learning_rate: 0.005439027854783987
+    num_layers: 1
+    batch_size: 32
+    hidden_channels: 34
+    max_epochs: 500
+    max_patience: 20
+    dropout_rate: 0.24963954443671624
+    grid_size: 3
+    spline_order: 5
+
+  xrd_regression:
+    learning_rate: 0.001098044801493113
+    num_layers: 1
+    batch_size: 32
+    hidden_channels: 33
+    max_epochs: 500
+    max_patience: 20
+    dropout_rate: 0.19100524470780703
+    grid_size: 3
+    spline_order: 4
+
+  xPDF_regression:
+    learning_rate: 0.0013059617225879571
+    num_layers: 1
+    batch_size: 32
+    hidden_channels: 34
+    max_epochs: 500
+    max_patience: 20
+    dropout_rate: 0.43788062651669224
+    grid_size: 5
+    spline_order: 4
+
+  pos_abs_regression:
+    learning_rate: 0.0005111535826876837
+    num_layers: 1
+    batch_size: 32
+    hidden_channels: 53
+    max_epochs: 500
+    max_patience: 20
+    dropout_rate: 0.4079204733517705
+    grid_size: 5
+    spline_order: 3
+
+  atom_classification:
+    learning_rate: 0.0009399203666501014
+    num_layers: 3
+    batch_size: 32
+    hidden_channels: 19
+    max_epochs: 500
+    max_patience: 20
+    dropout_rate: 0.1435915530068788
+    grid_size: 5
+    spline_order: 3
