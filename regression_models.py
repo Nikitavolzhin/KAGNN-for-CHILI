@@ -6,6 +6,12 @@ from torch_geometric.nn import GINEConv, GCNConv, GINConv
 from torch_geometric.nn import global_add_pool, global_mean_pool
 from torch_geometric.nn.conv import EdgeConv
 
+
+# The following function: make_kan, KAGIN, KANLayer, KAGCN_Layer, KAGCN, AtomEncoder, get_atom_feature_dims,
+# BondEncoder and get_bond_feature_dims; are from https://github.com/RomanBresson/KAGNN
+
+# KAGIN and KAGCN were modified for compatibility with node-level tasks
+# KAEdge and get_KAEdgeCNN_layer were built using the same logic as https://github.com/RomanBresson/KAGNN
 def make_kan(num_features, hidden_dim, out_dim, hidden_layers, grid_size, spline_order):
     sizes = [num_features] + [hidden_dim] * (hidden_layers - 1) + [out_dim]
     return (KAN(layers_hidden=sizes, grid_size=grid_size, spline_order=spline_order))

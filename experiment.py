@@ -81,6 +81,7 @@ def train(model_name, params, train_loader, val_loader, test_loader, task):
     # Training & Validation
     patience = 0
     best_error = None
+    # try-catch block to catch Out of Memory issue
     try:
         for epoch in range(params["max_epochs"]):
 
@@ -171,7 +172,7 @@ def train(model_name, params, train_loader, val_loader, test_loader, task):
 
                 loss = loss_function(pred.to(device), truth)
 
-                # Back prop. loss
+
                 optimizer.zero_grad()
                 loss.backward()
                 optimizer.step()
@@ -294,7 +295,7 @@ def train(model_name, params, train_loader, val_loader, test_loader, task):
                 return float("inf")
         else:
             raise
-
+# objective function for Optuna hyperparameter tuning
 def objective_function(trial, model_name, train_loader, val_loader, test_loader, metrics_file, task):
 
     lr = trial.suggest_float('learning_rate', 1e-4, 1e-2, log=True)

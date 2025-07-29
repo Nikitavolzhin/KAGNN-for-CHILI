@@ -6,6 +6,11 @@ from torch_geometric.nn import GINEConv, GCNConv, GINConv
 from torch_geometric.nn import global_add_pool, global_mean_pool
 from torch_geometric.nn.conv import EdgeConv
 
+# The following function: make_mlp, make_kan, KAGIN_cls, KANLayer, KAGCN_Layer, KAGCN_cls
+# are from https://github.com/RomanBresson/KAGNN
+
+# KAGIN_cls and KAGCN_cls were modified for compatibility with node-level tasks
+# KAEdge_cls and get_KAEdgeCNN_layer were built using the same logic as https://github.com/RomanBresson/KAGNN
 
 def make_mlp(num_features, hidden_dim, out_dim, hidden_layers, batch_norm=True):
     if hidden_layers>=2:
